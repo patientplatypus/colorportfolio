@@ -9,7 +9,7 @@
     >
       <template scope="values">
           <div class="welcometitle"
-               v-bind:style='{ backgroundColor: usecolor3, color: usecolor4, left: `${values.value}%`}'
+               v-bind:style='{ backgroundColor: usecolor1, color: usecolor4, left: `${values.value}%`}'
           >
           <h1>
             My Portfolio Projects
@@ -27,7 +27,7 @@
                v-bind:class="leftmethod(1)"
                v-on:click='barclicked(1)'
                v-on:mouseover="barhover(1)"  v-on:mouseleave='barleave(1)'
-               v-bind:style='{ backgroundColor: (bar1hover===true&&projectclicked!=1)?usecolor4:usecolor3, color: (bar1hover===true&&projectclicked!=1)?usecolor3:usecolor4, cursor:(bar1hover===true&&projectclicked!=1)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar1hover===true&&projectclicked!=1)?usecolor4:usecolor1, color: (bar1hover===true&&projectclicked!=1)?usecolor1:usecolor3, cursor:(bar1hover===true&&projectclicked!=1)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Shared Drawing App
@@ -45,7 +45,7 @@
                v-bind:class="leftmethod(2)"
                v-on:click='barclicked(2)'
                v-on:mouseover="barhover(2)"  v-on:mouseleave='barleave(2)'
-               v-bind:style='{ backgroundColor: (bar2hover===true&&projectclicked!=2)?usecolor4:usecolor3, color: (bar2hover===true&&projectclicked!=2)?usecolor3:usecolor4, cursor:(bar2hover===true&&projectclicked!=2)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar2hover===true&&projectclicked!=2)?usecolor4:usecolor1, color: (bar2hover===true&&projectclicked!=2)?usecolor1:usecolor3, cursor:(bar2hover===true&&projectclicked!=2)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Google Finance App
@@ -63,7 +63,7 @@
                v-bind:class="leftmethod(3)"
                v-on:click='barclicked(3)'
                v-on:mouseover="barhover(3)"  v-on:mouseleave='barleave(3)'
-               v-bind:style='{ backgroundColor: (bar3hover==true&&projectclicked!=3)===true?usecolor4:usecolor3, color: (bar3hover===true&&projectclicked!=3)?usecolor3:usecolor4, cursor:(bar3hover===true&&projectclicked!=3)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar3hover==true&&projectclicked!=3)===true?usecolor4:usecolor1, color: (bar3hover===true&&projectclicked!=3)?usecolor1:usecolor3, cursor:(bar3hover===true&&projectclicked!=3)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Job Tracking App
@@ -81,7 +81,7 @@
                v-bind:class="leftmethod(4)"
                v-on:click='barclicked(4)'
                v-on:mouseover="barhover(4)"  v-on:mouseleave='barleave(4)'
-               v-bind:style='{ backgroundColor: (bar4hover===true&&projectclicked!=4)?usecolor4:usecolor3, color: (bar4hover===true&&projectclicked!=4)?usecolor3:usecolor4, cursor:(bar4hover===true&&projectclicked!=4)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar4hover===true&&projectclicked!=4)?usecolor4:usecolor1, color: (bar4hover===true&&projectclicked!=4)?usecolor1:usecolor3, cursor:(bar4hover===true&&projectclicked!=4)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Hackathon Project
@@ -99,7 +99,7 @@
                v-bind:class="leftmethod(5)"
                v-on:click='barclicked(5)'
                v-on:mouseover="barhover(5)"  v-on:mouseleave='barleave(5)'
-               v-bind:style='{ backgroundColor: (bar5hover===true&&projectclicked!=5)?usecolor4:usecolor3, color: (bar5hover===true&&projectclicked!=5)?usecolor3:usecolor4, cursor:(bar5hover===true&&projectclicked!=5)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar5hover===true&&projectclicked!=5)?usecolor4:usecolor1, color: (bar5hover===true&&projectclicked!=5)?usecolor1:usecolor3, cursor:(bar5hover===true&&projectclicked!=5)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Python App
@@ -117,7 +117,7 @@
                v-bind:class="leftmethod(6)"
                v-on:click='barclicked(6)'
                v-on:mouseover="barhover(6)"  v-on:mouseleave='barleave(6)'
-               v-bind:style='{ backgroundColor: (bar6hover===true&&projectclicked!=6)?usecolor4:usecolor3, color: (bar6hover===true&&projectclicked!=6)?usecolor3:usecolor4, cursor:(bar6hover===true&&projectclicked!=6)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar6hover===true&&projectclicked!=6)?usecolor4:usecolor1, color: (bar6hover===true&&projectclicked!=6)?usecolor1:usecolor3, cursor:(bar6hover===true&&projectclicked!=6)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Portfolio v0.3
@@ -135,7 +135,7 @@
                v-bind:class="leftmethod(7)"
                v-on:click='barclicked(7)'
                v-on:mouseover="barhover(7)"  v-on:mouseleave='barleave(7)'
-               v-bind:style='{ backgroundColor: (bar7hover===true&&projectclicked!=7)?usecolor4:usecolor3, color: (bar7hover===true&&projectclicked!=7)?usecolor3:usecolor4, cursor:(bar7hover===true&&projectclicked!=7)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar7hover===true&&projectclicked!=7)?usecolor4:usecolor1, color: (bar7hover===true&&projectclicked!=7)?usecolor1:usecolor3, cursor:(bar7hover===true&&projectclicked!=7)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Portfolio v0.2
@@ -153,7 +153,7 @@
                v-bind:class="leftmethod(8)"
                v-on:click='barclicked(8)'
                v-on:mouseover="barhover(8)"  v-on:mouseleave='barleave(8)'
-               v-bind:style='{ backgroundColor: (bar8hover===true&&projectclicked!=8)?usecolor4:usecolor3, color: (bar8hover===true&&projectclicked!=8)?usecolor3:usecolor4, cursor:(bar8hover===true&&projectclicked!=8)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar8hover===true&&projectclicked!=8)?usecolor4:usecolor1, color: (bar8hover===true&&projectclicked!=8)?usecolor1:usecolor3, cursor:(bar8hover===true&&projectclicked!=8)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Portfolio v0.1
@@ -171,7 +171,7 @@
                v-bind:class="leftmethod(9)"
                v-on:click='barclicked(9)'
                v-on:mouseover="barhover(9)"  v-on:mouseleave='barleave(9)'
-               v-bind:style='{ backgroundColor: (bar9hover===true&&projectclicked!=9)?usecolor4:usecolor3, color: (bar9hover===true&&projectclicked!=9)?usecolor3:usecolor4, cursor:(bar9hover===true&&projectclicked!=9)?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: (bar9hover===true&&projectclicked!=9)?usecolor4:usecolor1, color: (bar9hover===true&&projectclicked!=9)?usecolor1:usecolor3, cursor:(bar9hover===true&&projectclicked!=9)?"pointer":"auto", top: `${values1.value}%`}'
           >
           <h1>
             Small Projects
@@ -186,9 +186,12 @@
       <template scope="values1">
           <div class="resumebar"
                v-on:mouseover="barhover(10)"  v-on:mouseleave='barleave(10)'
-               v-bind:style='{ backgroundColor: bar10hover===true?usecolor3:usecolor4, color: bar10hover===true?usecolor4:usecolor3, cursor:bar10hover===true?"pointer":"auto", top: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: bar10hover===true?usecolor4:usecolor2, color: bar10hover===true?usecolor1:usecolor5, cursor:bar10hover===true?"pointer":"auto", top: `${values1.value}%`}'
+               v-on:click='windowopener("../../static/PeterTWeyandResumeSep.pdf")'
           >
-          <a href="../PeterTWeyandResumeSep.pdf">Click Here to View My Resume!</a>
+          <h1>
+            Click Here to View My Resume!
+          </h1>
         </div>
       </template>
     </Motion>
@@ -199,7 +202,7 @@
       <template scope="values1">
           <div class="projectexplanation"
                v-bind:class='{ "fadeout": projectclicked != -1 }'
-               v-bind:style='{ backgroundColor: usecolor3, color: usecolor4, opacity: `${values1.value}`}'
+               v-bind:style='{ backgroundColor: usecolor1, color: usecolor3, opacity: `${values1.value}`}'
           >
           <p>
             Here is a portfolio of my most recent work. You can click on the links above to view project descriptions and pictures. Projects are broken up, roughly into a few categories.
@@ -223,7 +226,7 @@
       <template scope="values1">
           <div class="projectexplanation2"
                v-bind:class="reversefademethod(1)"
-               v-bind:style='{ backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+               v-bind:style='{ backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
           >
           <h3>
             Shared Drawing Application
@@ -269,7 +272,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("http://pennydrop.nanoapp.io")'
-          v-bind:style='{paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", fontSize: "2vh",  backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", fontSize: "2vh",  backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click to See Live App!
             </p>
@@ -284,7 +287,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
              v-bind:class="reversefademethod(2)"
-             v-bind:style='{ fontSize: "1.8vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+             v-bind:style='{ fontSize: "1.8vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
         >
           <h3>
             Google Finance Project
@@ -330,7 +333,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("https://github.com/patientplatypus/professional_portfolio/tree/master/src/components/pages/blogs/blogone")'
-          v-bind:style='{fontSize: "1.8vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{fontSize: "1.8vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click for Github Repo.
             </p>
@@ -345,7 +348,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
              v-bind:class="reversefademethod(3)"
-             v-bind:style='{ fontSize: "1.65vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+             v-bind:style='{ fontSize: "1.65vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
         >
           <h3>
             Personal Job Tracker
@@ -385,7 +388,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("https://github.com/patientplatypus/platypusTracker")'
-          v-bind:style='{fontSize: "1.65vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{fontSize: "1.65vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click for Github Repo.
             </p>
@@ -400,7 +403,7 @@
       <template scope="values1">
           <div class="projectexplanation2"
                v-bind:class="reversefademethod(4)"
-               v-bind:style='{  fontSize: "2vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+               v-bind:style='{  fontSize: "2vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
           >
             <h3>
               ATX Hack4Change Project - Kiwi Compute
@@ -447,7 +450,7 @@
             <div
             v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
             v-on:click='windowopener("https://github.com/patientplatypus/kiwi_compute")'
-            v-bind:style='{fontSize: "2vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+            v-bind:style='{fontSize: "2vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
               <p>
                 Click for Github Repo.
               </p>
@@ -462,7 +465,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
              v-bind:class="reversefademethod(5)"
-             v-bind:style='{ fontSize: "1.75vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+             v-bind:style='{ fontSize: "1.75vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
         >
           <h3>
             Python Picture Swapper Application
@@ -514,7 +517,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("https://github.com/patientplatypus/pythonpictureswapper")'
-          v-bind:style='{fontSize: "1.75vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{fontSize: "1.75vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click for Github Repo.
             </p>
@@ -529,7 +532,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
                v-bind:class="reversefademethod(6)"
-               v-bind:style='{ fontSize: "1.75vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+               v-bind:style='{ fontSize: "1.75vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
           >
           <h3>
             React Retro Futurism Portfolio
@@ -578,7 +581,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("http://www.q8z8p.com")'
-          v-bind:style='{fontSize: "1.75vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{fontSize: "1.75vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click for Live Site!
             </p>
@@ -593,7 +596,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
              v-bind:class="reversefademethod(7)"
-             v-bind:style='{fontSize: "2vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+             v-bind:style='{fontSize: "2vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
         >
           <h3>
             First React Portfolio
@@ -645,7 +648,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("https://github.com/patientplatypus/professional_portfolio")'
-          v-bind:style='{fontSize: "2vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{fontSize: "2vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click for Github Repo.
             </p>
@@ -660,7 +663,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
              v-bind:class="reversefademethod(8)"
-             v-bind:style='{fontSize: "2vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+             v-bind:style='{fontSize: "2vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
         >
           <h3>
             First Portfolio - JS/HTML/CSS
@@ -703,7 +706,7 @@
           <div
           v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
           v-on:click='windowopener("https://github.com/patientplatypus/portfolio_web")'
-          v-bind:style='{fontSize: "2vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
+          v-bind:style='{fontSize: "2vh", paddingTop:"0.5%", paddingBottom:"1%", paddingLeft:"0.5%", paddingRight: "0.5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto", position: "absolute", right: "0%", top: "90%"}'>
             <p>
               Click for Github Repo.
             </p>
@@ -718,7 +721,7 @@
       <template scope="values1">
         <div class="projectexplanation2"
              v-bind:class="reversefademethod(9)"
-             v-bind:style='{ fontSize: "1.8vh", backgroundColor: usecolor3, color: usecolor4, height: `${values1.value}%`}'
+             v-bind:style='{ fontSize: "1.8vh", backgroundColor: usecolor1, color: usecolor3, height: `${values1.value}%`}'
         >
           <h3>
             Smaller Projects
@@ -737,7 +740,7 @@
             class='textaligncenter'
             v-on:mouseover="barhover(11)"  v-on:mouseleave='barleave(11)'
             v-on:click='windowopener("https://play.integer32.com/?gist=1cf6b353444e2cab17fbfccd3193d5ef&version=undefined")'
-            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar11hover===true?usecolor4:usecolor5, color:bar11hover===true?usecolor5:usecolor4, cursor:bar11hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar11hover===true?usecolor2:usecolor4, color:bar11hover===true?usecolor5:usecolor1, cursor:bar11hover===true?"pointer":"auto"}'>
               <p>
                 Towers
               </p>
@@ -747,7 +750,7 @@
             class='textaligncenter'
             v-on:mouseover="barhover(12)"  v-on:mouseleave='barleave(12)'
             v-on:click='windowopener("https://repl.it/HzbX")'
-            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar12hover===true?usecolor4:usecolor5, color:bar12hover===true?usecolor5:usecolor4, cursor:bar12hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar12hover===true?usecolor2:usecolor4, color:bar12hover===true?usecolor5:usecolor1, cursor:bar12hover===true?"pointer":"auto"}'>
               <p>
                 Tic Tac Toe
               </p>
@@ -757,7 +760,7 @@
             class='textaligncenter'
             v-on:mouseover="barhover(13)"  v-on:mouseleave='barleave(13)'
             v-on:click='windowopener("https://github.com/patientplatypus/portfolio_web/blob/master/js/pingpong.pde")'
-            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar13hover===true?usecolor4:usecolor5, color:bar13hover===true?usecolor5:usecolor4, cursor:bar13hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar13hover===true?usecolor2:usecolor4, color:bar13hover===true?usecolor5:usecolor1, cursor:bar13hover===true?"pointer":"auto"}'>
               <p>
                 Ping Pong
               </p>
@@ -767,7 +770,7 @@
             class='textaligncenter'
             v-on:mouseover="barhover(14)"  v-on:mouseleave='barleave(14)'
             v-on:click='windowopener("https://github.com/patientplatypus/resume_html")'
-            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar14hover===true?usecolor4:usecolor5, color:bar14hover===true?usecolor5:usecolor4, cursor:bar14hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar14hover===true?usecolor2:usecolor4, color:bar14hover===true?usecolor5:usecolor1, cursor:bar14hover===true?"pointer":"auto"}'>
               <p>
                 Resume
               </p>
@@ -777,7 +780,7 @@
             class='textaligncenter'
             v-on:mouseover="barhover(15)"  v-on:mouseleave='barleave(15)'
             v-on:click='windowopener("https://github.com/patientplatypus/businesscards")'
-            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar15hover===true?usecolor4:usecolor5, color:bar15hover===true?usecolor5:usecolor4, cursor:bar15hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", padding:"0.1%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar15hover===true?usecolor2:usecolor4, color:bar15hover===true?usecolor5:usecolor1, cursor:bar15hover===true?"pointer":"auto"}'>
               <p>
                 Cards
               </p>
@@ -794,9 +797,9 @@
             class='textaligncenter'
             v-on:mouseover="barhover(16)"  v-on:mouseleave='barleave(16)'
             v-on:click='windowopener("https://github.com/patientplatypus/FirstSwiftProj")'
-            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar16hover===true?usecolor4:usecolor5, color:bar16hover===true?usecolor5:usecolor4, cursor:bar16hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar16hover===true?usecolor2:usecolor4, color:bar16hover===true?usecolor5:usecolor1, cursor:bar16hover===true?"pointer":"auto"}'>
               <p>
-                Swift Project.
+                Swift Project
               </p>
             </div>
             <div v-bind:style='{flex: "1"}'></div>
@@ -804,9 +807,9 @@
             class='textaligncenter'
             v-on:mouseover="barhover(17)"  v-on:mouseleave='barleave(17)'
             v-on:click='windowopener("https://github.com/patientplatypus/reactnativemobx")'
-            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar17hover===true?usecolor4:usecolor5, color:bar17hover===true?usecolor5:usecolor4, cursor:bar17hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar17hover===true?usecolor2:usecolor4, color:bar17hover===true?usecolor5:usecolor1, cursor:bar17hover===true?"pointer":"auto"}'>
               <p>
-                React Native Project.
+                React Native Project
               </p>
             </div>
             <div v-bind:style='{flex: "1"}'></div>
@@ -814,7 +817,7 @@
             class='textaligncenter'
             v-on:mouseover="barhover(18)"  v-on:mouseleave='barleave(18)'
             v-on:click='windowopener("https://github.com/patientplatypus/SudokuSolver")'
-            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar18hover===true?usecolor4:usecolor5, color:bar18hover===true?usecolor5:usecolor4, cursor:bar18hover===true?"pointer":"auto"}'>
+            v-bind:style='{flex: "1", height: "100%", lineHeight: "10%", marginBottom:"5%", backgroundColor: bar18hover===true?usecolor2:usecolor4, color:bar18hover===true?usecolor5:usecolor1, cursor:bar18hover===true?"pointer":"auto"}'>
               <p>
                 Sudoku Solver
               </p>
@@ -830,7 +833,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import { Motion } from 'vue-motion';
-import resume from '../assets/PeterTWeyandResumeSep.pdf';
+
 export default {
   name: 'home',
   components: {

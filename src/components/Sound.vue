@@ -24,7 +24,7 @@
     </div>
 
     <div v-if='currentpage!="sound"'>
-      <router-view v-bind:style="{position: 'relative', height: '90vh', width: '100%', backgroundColor: usecolor2 }"></router-view>
+      <router-view v-bind:style="{position: 'relative', height: '90vh', width: '100%', backgroundColor: usecolor5 }"></router-view>
     </div>
 
     <div v-bind:style='{ position: "relative", height: "100%", width: "100%"}'>
@@ -109,7 +109,7 @@
           v-on:click="notemaker('shape', 4)"></div>
           <div class='shape5 cursorpointer'
           v-on:click="notemaker('shape', 5)"></div>
-          <div v-if='shapechosen!=-1||colorchosen!=-1' class='builtnote' v-bind:style='{clipPath: shapepath, backgroundColor: builtcolor}'></div>
+          <div v-if='shapechosen!=-1||colorchosen!=-1' class='builtnote' v-bind:style='{clipPath: shapepath, backgroundColor: colorchosen===1?usecolor1:colorchosen===2?usecolor2:colorchosen===3?usecolor3:colorchosen===4?usecolor4:usecolor5}'></div>
         </div>
       </div>
     </div>
@@ -798,15 +798,15 @@ export default {
         }
         this.colorchosen = number;
         if(number===1){
-          this.builtcolor = `rgb(`+this.color1[0]+`, `+this.color1[1]+`, `+this.color1[2]+`)`;
+          this.builtcolor = this.usecolor1;
         }else if(number===2){
-          this.builtcolor = `rgb(`+this.color2[0]+`, `+this.color2[1]+`, `+this.color2[2]+`)`;
+          this.builtcolor = this.usecolor2;
         }else if(number===3){
-          this.builtcolor = `rgb(`+this.color3[0]+`, `+this.color3[1]+`, `+this.color3[2]+`)`;
+          this.builtcolor = this.usecolor3;
         }else if(number===4){
-          this.builtcolor = `rgb(`+this.color4[0]+`, `+this.color4[1]+`, `+this.color4[2]+`)`;
+          this.builtcolor = this.usecolor4;
         }else{
-          this.builtcolor = `rgb(`+this.color5[0]+`, `+this.color5[1]+`, `+this.color5[2]+`)`;
+          this.builtcolor = this.usecolor5;
         }
       }
       if (colorshape==='shape'){
@@ -880,7 +880,8 @@ export default {
 
 .speedslider{
   position: absolute;
-  width: 100%;
+  width: 80%;
+  left: 10%;
   height: 20%;
   top: 30%;
   text-align: center;

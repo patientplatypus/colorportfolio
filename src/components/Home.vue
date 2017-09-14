@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <div class='welcometitle' v-bind:style='{ backgroundColor: usecolor3, color: usecolor4}'>
+    <div class='welcometitle' v-bind:style='{ backgroundColor: usecolor1, color: usecolor4}'>
       <h1>
         Welcome to Q8Z8P!
       </h1>
     </div>
-    <div class='explanationbox' v-bind:style='{ backgroundColor: usecolor4, color: usecolor5}'>
+    <div class='explanationbox' v-bind:style='{ backgroundColor: usecolor1, color: usecolor3}'>
       <h3>
         Hello, my name is Peter Weyand and this is my website.
       </h3>

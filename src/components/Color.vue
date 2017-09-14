@@ -2,6 +2,63 @@
 
 <template>
   <div class="color">
+
+    <div  v-if='!showmindpalette' v-bind:style='{fontSize: "1.8vh"}' class='paletteexplanation'>
+      <h1>
+        How This Works.
+      </h1>
+      <br/>
+      <p>
+        This page requires a little explanation.
+      </p>
+      <br/>
+      <p>
+        The five colors shown above are the current palette colors that I use to populate the styling on my website. This will change the button colors, hovering and link styling, page colors and more. If you click the "retrieve palette" button above the colormind api is called to populate a canvas of aesthetically pleasing colors based on some cool machine learning voodoo.
+      </p>
+      <br/>
+      <p>
+        According to the website the five UI colors provided fall into the following categories, and I have organized pushing the colors to the site similarly.
+      </p>
+      <br/>
+      <ul>
+        <li>
+          The first color is a light shade that is used for light backgrounds or text color on dark backgrounds.
+        </li>
+        <li>
+          The second color is a light accent for light emphasis on light backgrounds or heavy emphasis on dark backgrounds.
+        </li>
+        <li>
+          The third color is the main color used as an anchor in the rest of the site.
+        </li>
+        <li>
+          The fourth color is a dark accent for light emphasis on dark backgrounds or heavy emphasis on light backgrounds.
+        </li>
+        <li>
+          The fifth color is the dark shade used for dark backgrounds and text on light backgrounds.
+        </li>
+      </ul>
+      <br/>
+      <p>
+        I try and mostly follow this style guide with my colors one through five assigning light to dark in the rest of the website. So after retrieving the colors if you push the "send all colors to current group" button it should populate the colors with a nice UI color choice.
+      </p>
+      <br/>
+      <p>
+        You may notice that this page has lots of black and white text. This is intentional as changing the colors in such a way to place similar text on similar background colors could make the buttons disappear! If you get stuck with colors you don&#39;t like this page&#39;s functionality won&#39;t change. I do something similar on the Sound page, but I&#39;ll leave it up to you to play with that one!
+      </p>
+      <br/>
+      <p>
+        In addition to the color palette retrieval you can change styles one at a time manually, or import only a couple colors from the aesthically pleasing colormind palette. Clicking on any color will bring up an rgb shifter. The Mr. Yuk in the corner will give you a visual indication of the contrast any color combination creates in close proximity to each other, which can sometimes be hard to determine.
+      </p>
+      <br/>
+      <p>
+        Finally, if all goes horribly wrong, you can always refresh my website to retrieve the default color scheme.
+      </p>
+      <br/>
+      <p>
+        I hope you like my toy! Have fun!
+      </p>
+    </div>
+
     <div class='facecontainer'>
       <div class='positionrelative'>
         <div class='facecircle' v-bind:style='{backgroundColor: usecolor2, borderColor: usecolor1}'/>
@@ -49,7 +106,7 @@
 
         <div v-if='!showmindpalette' v-on:click='colormindretrieve()' class='colormindbutton cmbposition1'>
           <p>
-            Retrieve Ascetically Pleasing Palette.
+            Retrieve Aesthetically Pleasing Palette.
           </p>
         </div>
         <div v-if='modifyingcolornumber===-1 && !choosecurrenttopalette && !choosepalettetocurrent' class='colorclickreminder cmbposition3'>
@@ -1189,6 +1246,26 @@ export default {
 
 <style scoped>
 
+.paletteexplanation{
+  position: absolute;
+  width: 48%;
+  background-color: rgb(250,250,250);
+  color: black;
+  height: 48%;
+  left: 45%;
+  top: 45%;
+  z-index: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  font-weight: bold;
+  font-size: 2vh;
+  padding: 1%;
+}
+
+.paletteexplanation p,.paletteexplanation ul{
+  text-align: left;
+}
+
 .color{
   position: absolute;
   top: 0%;
@@ -1702,7 +1779,7 @@ p {
 .cmbposition3{
   position: absolute;
   top: -15%;
-  left: 0%;
+  right: 0%;
   z-index: 1;
 }
 
